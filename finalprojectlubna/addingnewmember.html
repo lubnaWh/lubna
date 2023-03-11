@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>Adding New Feature</title>
+        <link rel="stylesheet" href="addingnewmember.css">
+        <link rel="preconnect" href="https:fonts.gstactic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+<body>
+  <div class="header">
+    <h1>Add Family Members</h1>
+  </div>
+  <div class="box">
+
+      <div class="info">
+      <p><label for="username">Username<span>*</span></label></p>
+      <div class="inputBox">
+      <input type="text" id="username" name="username" required>
+      </div>
+
+      <p><label for="full-name">Full Name<span>*</span></label></p>
+      <div class="inputBox">
+      <input type="text" id="full-name" name="full-name" required>
+      </div>
+
+      <p><label for="date-of-birth">Date of Birth<span>*</span></label></p>
+      <div class="inputBox">
+      <input type="date" id="date-of-birth" name="date-of-birth" required>
+      </div>
+      
+      <p><label for="privilege-status">Privilege Status<span>*</span></label></p>
+      <div class="title-block">
+        <select id="privilege" name="privilege-status" required>
+        <option value="">--Select One--</option>
+        <option value="main-user">Main User</option>
+        <option value="sub-user">Sub-User</option>
+      </select>
+    </div>
+
+      <p><label for="mobile-number">Mobile Number<span>*</span></label></p>
+      <div class="inputBox">
+      <input type="tel" id="mobile-number" name="mobile-number" required>
+      </div>
+      <br>
+      <input type="submit" onClick="checkAnswerrr()" value="view features" class="button" />
+      <input type="submit" onClick="addmember()" value="Add Member" class="button" />
+    
+
+      </div>
+    </form>
+
+    <div id="table1" style="display: none">
+      <table style="border-collapse: collapse;">
+          <tr>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"><b>Sub-user Feautures</b></td>
+            <td style="border: 1px solid black;"><b>Accessibility</b></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">The ability to change account settings or add or remove account holders.</td>
+            <td style="border: 1px solid black;"><center><i class="fa-solid fa-xmark"></i></center></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">The ability to open new accounts or apply for loans or credit cards.</td>
+            <td style="border: 1px solid black;"><center><i class="fa-solid fa-xmark"></i></center></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">The ability to access sensitive account information, such as account balances, transaction history, and account statements.</td>
+            <td style="border: 1px solid black;"><center><i class="fa-solid fa-xmark"></i></center></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">The ability to make certain types of transactions, such as wire transfers or large withdrawals.</td>
+            <td style="border: 1px solid black;"><center><i class="fa-solid fa-xmark"></i></center></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">5</td>
+            <td style="border: 1px solid black;">The ability to change security settings, such as passwords or two-factor authentication settings.</td>
+            <td style="border: 1px solid black;"><center><i class="fa-solid fa-xmark"></i></center></td>
+          </tr>
+          <tr>
+              <td style="border: 1px solid black;">6</td>
+              <td style="border: 1px solid black;">The ability to view sub user's account information, such as balances and transaction history.</td>
+              <td style="border: 1px solid black;"><center><i class="fa-solid fa-check"></i></center></td>
+            </tr>
+        </table>
+    </div>
+  
+        <br>
+        <div id="table2" style="display: none">
+        <table style="border-collapse: collapse;">
+          <tr>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"><b>Main-user Feautures</b></td>
+            <td style="border: 1px solid black;"><b>Accessibility</b></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">The ability to change account settings or add or remove account holders.</td>
+            <td style="border: 1px solid black;"><center><i class="fa-solid fa-check"></i></center></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">The ability to open new accounts or apply for loans or credit cards.</td>
+            <td style="border: 1px solid black;"><center><i class="fa-solid fa-check"></i></center></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">The ability to access sensitive account information, such as account balances, transaction history, and account statements.</td>
+            <td style="border: 1px solid black;"><center><i class="fa-solid fa-check"></i></center></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">The ability to make certain types of transactions, such as wire transfers or large withdrawals.</td>
+            <td style="border: 1px solid black;"><center><i class="fa-solid fa-check"></i></center></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">5</td>
+            <td style="border: 1px solid black;">The ability to change security settings, such as passwords or two-factor authentication settings.</td>
+            <td style="border: 1px solid black;"><center><i class="fa-solid fa-check"></i></center></td>
+          </tr>
+          <tr>
+              <td style="border: 1px solid black;">6</td>
+              <td style="border: 1px solid black;">The ability to view sub user's account information, such as balances and transaction history.</td>
+              <td style="border: 1px solid black;"><center><i class="fa-solid fa-check"></i></center></td>
+  
+            </tr>
+        </table>
+      </div>
+    </div>
+
+    </body>
+
+
+<script>
+    function checkAnswerrr(){
+    var privilege=document.getElementById("privilege").value;
+    if(privilege=="main-user"){
+      document.getElementById("table2").style.display = "block";
+      document.getElementById("table1").style.display = "none";
+    }
+    if(privilege=="sub-user"){
+  document.getElementById("table2").style.display = "none";
+  document.getElementById("table1").style.display = "block";
+} 
+else{
+  alert("please fill in your information");
+}}
+    function addmember(){
+      alert("User Added Successfuly");
+    }
+</script>
+
+  </html>
