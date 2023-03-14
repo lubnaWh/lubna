@@ -126,8 +126,9 @@ span {
     position: absolute;
     top: 45%;
     }
-    
-}
+  
+    }
+
 
 @media all and (max-width:1200px){
     .box{
@@ -165,6 +166,21 @@ span {
     height:15px;
     width: 150px;
   }
+  #table1{
+    width:90%;
+    position: fixed;
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#table2{
+    width:90%;
+    position: fixed;
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+}
 @media only screen and (max-width:800px){
     .header{
         text-align: center;
@@ -175,5 +191,4 @@ span {
     position: absolute;
     bottom:45px;
     }
-}
 }
