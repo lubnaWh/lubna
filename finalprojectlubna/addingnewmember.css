@@ -7,7 +7,7 @@ body {
 
 .header{
     position: absolute;
-    top: 11%;
+    top: 9%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -114,6 +114,66 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
     }
+@media only screen and (max-width:500px){
+    .header{
+        position: absolute;
+        bottom:100%;
+        text-align: center;
+    }
+    .box{
+        width: 18rem;
+    padding: 11.5rem;
+    position: absolute;
+    top: 45%;
+    }
     
-    
+}
 
+@media all and (max-width:1200px){
+    .box{
+        position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    padding: 11.5rem;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    background-color: #f8f8f8;
+    }
+    .info p{
+        margin: 20px 0 4px;
+        font-size: 15;
+        }
+        .box .inputBox input {
+            width: 250px;
+            height:19px;
+            border: 1px solid #ccc;
+            background: white;
+            border-radius: 4px;
+            
+          }
+          .title-block select, .title-block input {
+            margin-bottom: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            background: white;
+            border-radius: 4px;
+            height: 19px;
+}
+.box button {
+    height:15px;
+    width: 150px;
+  }
+@media only screen and (max-width:800px){
+    .header{
+        text-align: center;
+    }
+    .box{
+        width: 18rem;
+    padding: 12.5rem;
+    position: absolute;
+    bottom:45px;
+    }
+}
+}
